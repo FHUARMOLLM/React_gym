@@ -1,127 +1,118 @@
-/*
-
-Tooplate 2119 Gymso Fitness
-
-https://www.tooplate.com/view/2119-gymso-fitness
-
-*/
-
 @font-face {
-    font-family: 'Plain';
-    src: url('../fonts/Plain-Regular.woff2') format('woff2'),
-        url('../fonts/Plain-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Plain';
+  src: url('../fonts/Plain-Regular.woff2') format('woff2'),
+      url('../fonts/Plain-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Plain';
-    src: url('../fonts/Plain-Light.woff2') format('woff2'),
-        url('../fonts/Plain-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Plain';
+  src: url('../fonts/Plain-Light.woff2') format('woff2'),
+      url('../fonts/Plain-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Plain';
-    src: url('../fonts/Plain-Bold.woff2') format('woff2'),
-        url('../fonts/Plain-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Plain';
+  src: url('../fonts/Plain-Bold.woff2') format('woff2'),
+      url('../fonts/Plain-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 :root {
-  --primary-color:        #9e1470;
-  --white-color:          #e9da11;
-  --dark-color:           #120530;
-  --about-bg-color:       #215172;
+  --primary-color: #9e1470;
+  --white-color: #e9da11;
+  --dark-color: #120530;
+  --about-bg-color: #215172;
 
-  --gray-color:           #261d41;
-  --link-color:           #93c017;
-  --p-color:              #20ac20;
+  --gray-color: #261d41;
+  --link-color: #93c017;
+  --p-color: #20ac20;
 
-  --base-font-family:var(--h1-font-size);
-  --font-weight-bold:     bold;
-  --font-weight-normal:   normal;
-  --font-weight-light:    300;
-  --font-weight-thin:     100;
+  --base-font-family: 48px;
+  --font-weight-bold: bold;
+  --font-weight-normal: normal;
+  --font-weight-light: 300;
+  --font-weight-thin: 100;
 
-  --h1-font-size:         48px;
-  --h2-font-size:         36px;
-  --h3-font-size:         28px;
-  --h4-font-size:         24px;
-  --h5-font-size:         22px;
-  --h6-font-size:         22px;
-  --p-font-size:          18px;
-  --base-font-size:       16px;
-  --menu-font-size:       14px;
+  --h1-font-size: 48px;
+  --h2-font-size: 36px;
+  --h3-font-size: 28px;
+  --h4-font-size: 24px;
+  --h5-font-size: 22px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --base-font-size: 16px;
+  --menu-font-size: 14px;
 
-  --border-radius-large:  100%;
-  --border-radius-small:  2px;
+  --border-radius-large: 100%;
+  --border-radius-small: 2px;
 }
 
-
 body {
-  background: var(--white-color);
-  font-family: var(--base-font-family);
+  background: #e9da11;
+  font-family: 48px;
 }
 
 
 /*---------------------------------------
-   TYPOGRAPHY              
+ TYPOGRAPHY              
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
-  font-weight: var(--font-weight-thin);
+  font-weight: 100;
   line-height: normal;
 }
 
 h1 {
-  font-size: var(--h1-font-size);
-  font-weight: var(--font-weight-bold);
+  font-size: 48px;
+  font-weight: bold;
   letter-spacing: -1px;
   text-transform: uppercase;
   margin: 20px 0;
 }
 
 h2 {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  font-weight: bold;
   letter-spacing: -2px;
 }
 
 h3 {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-weight-bold);
+  font-size: 28px;
+  font-weight: bold;
   letter-spacing: -1px;
   margin: 0;
 }
 
 h4 {
-  font-size: var(--h4-font-size);
+  font-size: 24px;
 }
 
 h5 {
-  font-size: var(--h5-font-size);
+  font-size: 22px;
 }
 
 h6 {
-  color: var(--gray-color);
-  font-size: var(--h6-font-size);
+  color: #261d41;
+  font-size: 22px;
   line-height: inherit;
   margin: 0;
 }
 
 p {
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
+  color: #20ac20;
+  font-size: 18px;
+  font-weight: 300;
   line-height: 1.5em;
 }
 
 b, 
 strong {
-  font-weight: var(--font-weight-bold);
+  font-weight: bold;
   letter-spacing: 0;
 }
 
@@ -134,11 +125,11 @@ strong {
 
 .custom-btn {
   background: transparent;
-  border-radius: var(--border-radius-small);
+  border-radius: 2px;
   padding: 14px 24px;
-  color: var(--white-color);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-normal);
+  color: #e9da11;
+  font-size: 14px;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   white-space: nowrap;
@@ -146,7 +137,7 @@ strong {
 }
 
 .custom-btn:hover {
-  color: var(--primary-color);
+  color: #9e1470;
 }
 
 .custom-btn:focus {
@@ -158,25 +149,24 @@ strong {
 
 .custom-btn.bg-color:hover,
 .custom-btn.bg-color:focus {
-  background: var(--white-color);
+  background: #e9da11;
   border-color: transparent;
-  color: var(--primary-color);
+  color: #9e1470;
 }
 
 .bordered {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 1px solid #9e1470;
+  color: #9e1470;
 }
 
 .bg-color {
-  background: var(--primary-color);
-  color: var(--white-color);
+  background: #9e1470;
+  color: #e9da11;
 }
 
 
-
 /*---------------------------------------
-   GENERAL               
+ GENERAL               
 -----------------------------------------*/
 
 * {
@@ -193,7 +183,7 @@ strong {
 }
 
 a {
-  color: var(--link-color);
+  color: #93c017;
   font-weight: normal;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -202,7 +192,7 @@ a {
 a:hover, 
 a:active, 
 a:focus {
-  color: var(--primary-color);
+  color: #9e1470;
   outline: none;
   text-decoration: none;
 }
@@ -211,7 +201,7 @@ a:focus {
 /* BG OVERLAY */
 
 .bg-overlay {
-  background: var(--dark-color);
+  background: #120530;
   position: absolute;
   top: 0;
   right: 0;
@@ -224,7 +214,7 @@ a:focus {
 
 
 /*---------------------------------------
-   MODAL              
+ MODAL              
 -----------------------------------------*/
 
 .modal-content {
@@ -239,26 +229,26 @@ a:focus {
 }
 
 .membership-form a {
-  color: var(--primary-color);
+  color: #9e1470;
 }
 
 
 /*---------------------------------------
-  FEATURE          
+FEATURE          
 -----------------------------------------*/
 
 .feature {
-  background: var(--dark-color);
+  background: #120530;
   padding: 5rem 0;
 }
 
 
 /*---------------------------------------
-   MENU             
+ MENU             
 -----------------------------------------*/
 
 .navbar {
-  background: var(--dark-color);
+  background: #120530;
   padding: 1rem;
 }
 
@@ -268,29 +258,29 @@ a:focus {
 }
 
 .navbar-brand {
-  color: var(--white-color);
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-weight-bold);
+  color: #e9da11;
+  font-size: 28px;
+  font-weight: bold;
   line-height: normal;
   padding-top: 0;
 }
 
 .nav-item .nav-link {
   display: block;
-  color: var(--white-color);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-normal);
+  color: #e9da11;
+  font-size: 14px;
+  font-weight: normal;
   text-transform: uppercase;
   padding: 2px 6px;
 }
 
 .nav-item .nav-link.active,
 .nav-item .nav-link:hover {
-  color: var(--primary-color);
+  color: #9e1470;
 }
 
 .navbar .social-icon li a {
-  color: var(--white-color);
+  color: #e9da11;
 }
 
 .navbar-toggler {
@@ -328,7 +318,7 @@ a:focus {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--primary-color);
+  background: #9e1470;
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -344,7 +334,7 @@ a:focus {
   position: absolute;
   right: 0;
   left: 0;
-  background: var(--primary-color);
+  background: #9e1470;
   width: 30px;
   height: 2px;
   content: '';
@@ -359,7 +349,7 @@ a:focus {
 }
 
 /*---------------------------------------
-   HERO              
+ HERO              
 -----------------------------------------*/
 
 .hero {
@@ -374,11 +364,11 @@ a:focus {
 
 
 /*---------------------------------------
-   CLASS               
+ CLASS               
 -----------------------------------------*/
 
 .class-info {
-  background: var(--white-color);
+  background: #e9da11;
   box-shadow: 6px 0 38px rgba(20,20,20,0.10);
   border-radius: 0 0 2px 2px;
   padding: 1rem 2rem;
@@ -390,14 +380,14 @@ a:focus {
 }
 
 .class-info strong {
-  color: var(--gray-color);
+  color: #261d41;
 }
 
 .class-price {
-  background: var(--primary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
+  background: #9e1470;
+  border-radius: 100%;
+  color: #e9da11;
+  font-weight: bold;
   display: block;
   position: absolute;
   top: 2rem;
@@ -410,11 +400,11 @@ a:focus {
 
 
 /*---------------------------------------
-   SCHEDULE             
+ SCHEDULE             
 -----------------------------------------*/
 
 .schedule {
-  background: var(--dark-color);
+  background: #120530;
 }
 
 .schedule-table {
@@ -430,16 +420,16 @@ a:focus {
 }
 
 .schedule-table strong {
-  color: var(--white-color);
+  color: #e9da11;
 }
 
 .schedule-table span {
-  color: var(--gray-color);
+  color: #261d41;
 }
 
 .schedule-table span,
 .schedule-table small {
-  font-size: var(--menu-font-size);
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -450,9 +440,9 @@ a:focus {
 
 .table .thead-light th,
 .schedule-table tr td:first-child {
-  background: var(--primary-color);
+  background: #9e1470;
   border: 1px solid #212122;
-  color: var(--white-color);
+  color: #e9da11;
 }
 
 .schedule-table .thead-light th {
@@ -475,11 +465,11 @@ a:focus {
 
 
 /*---------------------------------------
-    ABOUT & TEAM            
+  ABOUT & TEAM            
 -----------------------------------------*/
 
 .about {
-  background: var(--about-bg-color);
+  background: #215172;
 }
 
 .about-working-hours {
@@ -488,7 +478,7 @@ a:focus {
 }
 
 .about-working-hours strong {
-  color: var(--white-color);
+  color: #e9da11;
   opacity: 0.85;
 }
 
@@ -497,7 +487,7 @@ a:focus {
 }
 
 .team-info {
-  background: var(--white-color);
+  background: #e9da11;
   border-radius: 0 0 2px 2px;
   box-shadow: 6px 0 38px rgba(20,20,20,0.10);
   padding: 20px;
@@ -505,7 +495,7 @@ a:focus {
 }
 
 .team-info span {
-  font-weight: var(--font-weight-light);
+  font-weight: 300;
   opacity: 0.85;
 }
 
@@ -521,7 +511,7 @@ a:focus {
 
 
 /*---------------------------------------
-   CONTACT              
+ CONTACT              
 -----------------------------------------*/
 
 .webform input,
@@ -530,25 +520,25 @@ button#submit-button {
 }
 
 .form-control {
-  border-radius: var(--border-radius-small);
+  border-radius: 2px;
   margin: 1.3rem 0;
 }
 
 .form-control:focus {
   box-shadow: none;
-  border-color: var(--dark-color);
+  border-color: #120530;
 }
 
 button#submit-button {
-  background: var(--dark-color);
+  background: #120530;
   border-color: transparent;
-  color: var(--white-color);
+  color: #e9da11;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 button#submit-button:hover {
-  background: var(--primary-color);
+  background: #9e1470;
 }
 
 .contact h2 + p {
@@ -567,7 +557,7 @@ button#submit-button:hover {
 
 
 /*---------------------------------------
-   FOOTER              
+ FOOTER              
 -----------------------------------------*/
 
 .site-footer {
@@ -576,22 +566,22 @@ button#submit-button:hover {
 }
 
 .site-footer a {
-  color: var(--p-color);
-  font-weight: var(--font-weight-light);
+  color: #20ac20;
+  font-weight: 300;
 }
 
 .site-footer p {
-  font-size: var(--base-font-size);
+  font-size: 16px;
 }
 
 .contact .fa,
 .site-footer .fa {
-  color: var(--primary-color);
+  color: #9e1470;
 }
 
 
 /*---------------------------------------
-   SOCIAL ICON              
+ SOCIAL ICON              
 -----------------------------------------*/
 
 .social-icon {
@@ -608,20 +598,20 @@ button#submit-button:hover {
 .social-icon li a {
   text-decoration: none;
   display: inline-block;
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-bold);
+  color: #20ac20;
+  font-size: 18px;
+  font-weight: bold;
   margin: 5px 10px;
   text-align: center;
 }
 
 .social-icon li a:hover {
-  color: var(--primary-color);
+  color: #9e1470;
 }
 
 
 /*---------------------------------------
-   RESPONSIVE STYLES              
+ RESPONSIVE STYLES              
 -----------------------------------------*/
 
 @media screen and (max-width: 992px) {
@@ -664,6 +654,6 @@ button#submit-button:hover {
   }
 
   .contact h2 span {
-    display: block;
+    display:block;
   }
 }
