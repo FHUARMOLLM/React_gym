@@ -23,6 +23,7 @@
 }
 
 :root {
+<<<<<<< HEAD
   --primary-color: #f13a11;
   --white-color: #fff;
   --dark-color: #171819;
@@ -31,6 +32,16 @@
   --gray-color: #261d41;
   --link-color: #404040;
   --p-color: #666262;
+=======
+  --primary-color: #9e1470;
+  --white-color: #e9da11;
+  --dark-color: #120530;
+  --about-bg-color: #215172;
+
+  --gray-color: #261d41;
+  --link-color: #93c017;
+  --p-color: #20ac20;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
 
   --base-font-family: 48px;
   --font-weight-bold: bold;
@@ -53,7 +64,11 @@
 }
 
 body {
+<<<<<<< HEAD
   background: #ffff;
+=======
+  background: #e9da11;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
   font-family: 48px;
 }
 
@@ -92,23 +107,37 @@ h3 {
 
 h4 {
   font-size: 24px;
+<<<<<<< HEAD
   color: #f13a11; /* primary-color */
+=======
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
 }
 
 h5 {
   font-size: 22px;
+<<<<<<< HEAD
   color: #f13a11; /* primary-color */
 }
 
 h6 {
   color: #261d41; /* gray-color */
+=======
+}
+
+h6 {
+  color: #261d41;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
   font-size: 22px;
   line-height: inherit;
   margin: 0;
 }
 
 p {
+<<<<<<< HEAD
   color: #666262; /* p-color */
+=======
+  color: #20ac20;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5em;
@@ -128,7 +157,11 @@ strong {
   background: transparent;
   border-radius: 2px;
   padding: 14px 24px;
+<<<<<<< HEAD
   color: #fff; /* white-color */
+=======
+  color: #e9da11;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
@@ -138,7 +171,11 @@ strong {
 }
 
 .custom-btn:hover {
+<<<<<<< HEAD
   color: #f13a11; /* primary-color */
+=======
+  color: #9e1470;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
 }
 
 .custom-btn:focus {
@@ -149,6 +186,7 @@ strong {
 .custom-btn.bordered:focus,
 .custom-btn.bg-color:hover,
 .custom-btn.bg-color:focus {
+<<<<<<< HEAD
   background: #f9f9f9; /* about-bg-color */
   border-color: transparent;
   color: #f13a11; /* primary-color */
@@ -162,6 +200,21 @@ strong {
 .bg-color {
   background: #261d41; /* gray-color */
   color: #f9f9f9; /* about-bg-color */
+=======
+  background: #e9da11;
+  border-color: transparent;
+  color: #9e1470;
+}
+
+.bordered {
+  border: 1px solid #9e1470;
+  color: #9e1470;
+}
+
+.bg-color {
+  background: #9e1470;
+  color: #e9da11;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
 }
 
 
@@ -245,6 +298,7 @@ FEATURE
 
 /*---------------------------------------
  MENU             
+<<<<<<< HEAD
 -----------------------------------------*/
 /*---------------------------------------
  NAVBAR              
@@ -252,6 +306,82 @@ FEATURE
 
 .navbar-toggler .navbar-toggler-icon {
   background: #007bff; /* Cambia el color del fondo del icono del desplegable */
+=======
+-----------------------------------------*/
+
+.navbar {
+  background: #120530;
+  padding: 1rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.navbar-brand {
+  color: #e9da11;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: normal;
+  padding-top: 0;
+}
+
+.nav-item .nav-link {
+  display: block;
+  color: #e9da11;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 2px 6px;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: #9e1470;
+}
+
+.navbar .social-icon li a {
+  color: #e9da11;
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 35px;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background: #9e1470;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -267,7 +397,11 @@ FEATURE
   position: absolute;
   right: 0;
   left: 0;
+<<<<<<< HEAD
   background: #007bff; /* Cambia el color de las barras del icono del desplegable */
+=======
+  background: #9e1470;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
   width: 30px;
   height: 2px;
   content: '';
@@ -282,7 +416,11 @@ FEATURE
 }
 
 /*---------------------------------------
+<<<<<<< HEAD
  HERO              
+=======
+ HERO              
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
 -----------------------------------------*/
 
 .hero {
@@ -297,11 +435,19 @@ FEATURE
 }
 
 /*---------------------------------------
+<<<<<<< HEAD
  CLASS               
 -----------------------------------------*/
 
 .class-info {
   background: #007bff; /* Cambia el color de fondo de la información de la clase */
+=======
+ CLASS               
+-----------------------------------------*/
+
+.class-info {
+  background: #e9da11;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
   box-shadow: 6px 0 38px rgba(20,20,20,0.10);
   border-radius: 0 0 2px 2px;
   padding: 1rem 2rem;
@@ -313,6 +459,7 @@ FEATURE
 }
 
 .class-info strong {
+<<<<<<< HEAD
   color: #ffffff; /* Cambia el color del texto en negrita */
 }
 
@@ -320,6 +467,15 @@ FEATURE
   background: #ffc107; /* Cambia el color de fondo del precio */
   border-radius: 100%;
   color: #007bff; /* Cambia el color del texto en el precio */
+=======
+  color: #261d41;
+}
+
+.class-price {
+  background: #9e1470;
+  border-radius: 100%;
+  color: #e9da11;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
   font-weight: bold;
   display: block;
   position: absolute;
@@ -332,11 +488,19 @@ FEATURE
 }
 
 /*---------------------------------------
+<<<<<<< HEAD
  SCHEDULE             
 -----------------------------------------*/
 
 .schedule {
   background: #ff6347; /* Cambia el color de fondo del horario */
+=======
+ SCHEDULE             
+-----------------------------------------*/
+
+.schedule {
+  background: #120530;
+>>>>>>> e241662e0d453b957699990eab696da8a70b2a32
 }
 
 .schedule-table {
