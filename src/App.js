@@ -6,6 +6,7 @@ import About from './components/About';
 import Class from './components/Class';
 import Schedule from './components/Schedule';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
 
 const App = () => {
@@ -18,6 +19,8 @@ const App = () => {
       <Class />
       <Schedule />
       <Contact />
+      <Footer />
+
     </div>
   );
 };
